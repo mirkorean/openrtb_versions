@@ -19,14 +19,17 @@ imp: #required
     imp.banner.ext:
   imp.video: #required (if video)
     imp.video.mimes: #required
-    imp.video.minduration: #required
-    imp.video.maxduration: #required
+    imp.video.minduration: #recommmended
+    imp.video.maxduration: #recommmended
     imp.video.protocols: #recommended
-    imp.video.protocol:
+    imp.video.protocol: #deprecated
     imp.video.w: #recommended
     imp.video.h: #recommended
     imp.video.startdelay: #recommended
     imp.video.linearity:
+    imp.video.skip:
+    imp.video.skipmin:
+    imp.video.skipafter:
     imp.video.sequence:
     imp.video.battr:
     imp.video.maxextended:
@@ -40,6 +43,12 @@ imp: #required
     imp.video.api:
     imp.video.companiontype:
     imp.video.ext:
+  imp.native: #required (if native)
+    imp.native.request: #required
+    imp.native.ver: #recommended
+    imp.native.api:
+    imp.native.battr:
+    imp.ext:
   imp.pmp:
     imp.pmp.private_auction:
     imp.pmp.deals:
@@ -57,8 +66,10 @@ imp: #required
   imp.instl:
   imp.bidfloor:
   imp.bidfloorcur:
+  imp.clickbrowers:
   imp.secure:
   imp.iframebuster:
+  imp.exp:
   imp.ext:
 site: #recommended (if site)
   site.id: #recommmended
@@ -70,6 +81,7 @@ site: #recommended (if site)
   site.page:
   site.ref:
   site.search:
+  site.mobile:
   site.privacypolicy:
   site.publisher:
     site.publisher.id:
@@ -83,6 +95,10 @@ site: #recommended (if site)
     site.content.title:
     site.content.series:
     site.content.season:
+    site.content.artist:
+    site.content.genre:
+    site.content.album:
+    site.content.isrc:
     site.content.producer:
       site.content.producer.id:
       site.content.producer.name:
@@ -91,6 +107,7 @@ site: #recommended (if site)
       site.content.producer.ext:
     site.content.url:
     site.content.cat:
+    site.content.prodq:
     site.content.videoquality:
     site.content.context:
     site.content.contentrating:
@@ -164,8 +181,10 @@ device: #recommended
     device.geo.metro:
     device.geo.city:
     device.geo.zip:
+    device.geo.utcoffset:
     device.geo.ext:
   device.dnt: #recommended
+  device.lmt: #recommended
   device.ip: #recommended
   device.ipv6:
   device.devicetype:
@@ -173,6 +192,11 @@ device: #recommended
   device.model:
   device.os:
   device.osv:
+  device.hwv:
+  device.h:
+  device.w:
+  device.ppi:
+  device.pxratio:
   device.js:
   device.flashver:
   device.language:
@@ -203,6 +227,7 @@ user:  #recommended
     user.geo.metro:
     user.geo.city:
     user.geo.zip:
+    user.geo.utcoffset:
     user.geo.ext:
   user.data:
   - user.data.id:
@@ -214,6 +239,7 @@ user:  #recommended
       user.data.segment.ext:
     user.data.ext:
   user.ext:
+test:
 at:
 tmax:
 wseat:

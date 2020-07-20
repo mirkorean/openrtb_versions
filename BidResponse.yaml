@@ -8,9 +8,11 @@ seatbid:
     seatbid.bid.adm:
     seatbid.bid.adid:
     seatbid.bid.adomain:
+    seatbid.bid.bundle:
     seatbid.bid.iurl:
     seatbid.bid.cid:
     seatbid.bid.crid:
+    seatbid.bid.cat:
     seatbid.bid.attr:
     seatbid.bid.dealid:
     seatbid.bid.w:
