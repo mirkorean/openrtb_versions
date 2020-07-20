@@ -12,6 +12,9 @@ seatbid:
     seatbid.bid.cid:
     seatbid.bid.crid:
     seatbid.bid.attr:
+    seatbid.bid.dealid:
+    seatbid.bid.w:
+    seatbid.bid.h:
     seatbid.bid.ext:
   seatbid.seat:
   seatbid.group:

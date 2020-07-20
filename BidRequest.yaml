@@ -4,6 +4,10 @@ imp: #required
   imp.banner: #required (if banner)
     imp.banner.w: #recommended
     imp.banner.h: #recommended
+    imp.banner.wmax:
+    imp.banner.hmax:
+    imp.banner.wmin:
+    imp.banner.hmin: 
     imp.banner.btype:
     imp.banner.battr:
     imp.banner.pos:
@@ -17,11 +21,12 @@ imp: #required
     imp.video.mimes: #required
     imp.video.minduration: #required
     imp.video.maxduration: #required
-    imp.video.protocol: #required
+    imp.video.protocols: #recommended
+    imp.video.protocol:
     imp.video.w: #recommended
     imp.video.h: #recommended
     imp.video.startdelay: #recommended
-    imp.video.linearity: #required
+    imp.video.linearity:
     imp.video.sequence:
     imp.video.battr:
     imp.video.maxextended:
@@ -35,12 +40,24 @@ imp: #required
     imp.video.api:
     imp.video.companiontype:
     imp.video.ext:
+  imp.pmp:
+    imp.pmp.private_auction:
+    imp.pmp.deals:
+      imp.pmp.deals[].id: #required
+      imp.pmp.deals[].bidfloor:
+      imp.pmp.deals[].bidfloorcur:
+      imp.pmp.deals[].at:
+      imp.pmp.deals[].wseat:
+      imp.pmp.deals[].wadomain:
+      imp.pmp.deals[].ext:
+    imp.ext:
   imp.displaymanager:
   imp.displaymanagerver:
   imp.tagid:
   imp.instl:
   imp.bidfloor:
   imp.bidfloorcur:
+  imp.secure:
   imp.iframebuster:
   imp.ext:
 site: #recommended (if site)
@@ -161,10 +178,13 @@ device: #recommended
   device.language:
   device.carrier:
   device.connectiontype:
+  device.ifa:
   device.didsha1:
   device.didmd5:
   device.dpidsha1:
   device.dpidmd5:
+  device.macsha1:
+  device.machmd5:
   device.ext:
 user:  #recommended
   user.id: #recommended
@@ -201,4 +221,7 @@ allimps:
 cur:
 bcat:
 badv:
+regs:
+  regs.coppa:
+  regs.ext:
 ext:
