@@ -2,12 +2,16 @@ id: #required
 imp: #required
 - imp.id: #required
   imp.banner: #required (if banner)
+    imp.banner.format:
+    - imp.banner.format.w:
+      imp.banner.format.h:
+      imp.banner.format.ext:
     imp.banner.w: #recommended
     imp.banner.h: #recommended
-    imp.banner.wmax:
-    imp.banner.hmax:
-    imp.banner.wmin:
-    imp.banner.hmin: 
+    imp.banner.wmax: #deprecated
+    imp.banner.hmax: #deprecated
+    imp.banner.wmin: #deprecated
+    imp.banner.hmin: #deprecated
     imp.banner.btype:
     imp.banner.battr:
     imp.banner.pos:
@@ -43,6 +47,26 @@ imp: #required
     imp.video.api:
     imp.video.companiontype:
     imp.video.ext:
+  imp.audio: #required (if audio)
+    imp.audio.mimes: #required
+    imp.audio.minduration: #recommended
+    imp.audio.maxduration: #recommended
+    imp.audio.protocols: #recommended
+    imp.audio.startdelay: #recommended
+    imp.audio.sequence:
+    imp.audio.battr:
+    imp.audio.maxextended:
+    imp.audio.minbitrate:
+    imp.audio.maxbitrate:
+    imp.audio.delivery:
+    imp.audio.companionad:
+    imp.audio.api:
+    imp.audio.companiontype:
+    imp.audio.maxseq:
+    imp.audio.feed:
+    imp.audio.stitched:
+    imp.audio.nvol:
+    imp.audio.ext:
   imp.native: #required (if native)
     imp.native.request: #required
     imp.native.ver: #recommended
@@ -147,6 +171,10 @@ app: #recommended (if app)
     app.content.title:
     app.content.series:
     app.content.season:
+    app.content.artist:
+    app.content.genre:
+    app.content.album:
+    app.content.isrc:
     app.content.producer:
       app.content.producer.id:
       app.content.producer.name:
@@ -155,6 +183,7 @@ app: #recommended (if app)
       app.content.producer.ext:
     app.content.url:
     app.content.cat:
+    app.content.prodq:
     app.content.videoquality:
     app.content.context:
     app.content.contentrating:
@@ -166,6 +195,7 @@ app: #recommended (if app)
     app.content.len:
     app.content.language:
     app.content.embeddable:
+    app.content.data:
     app.content.ext:
   app.keywords:
   app.ext:
@@ -175,6 +205,9 @@ device: #recommended
     device.geo.lat:
     device.geo.lon:
     device.geo.type:
+    device.geo.accuracy:
+    device.geo.lastfix:
+    device.geo.ipservice:
     device.geo.country:
     device.geo.region:
     device.geo.regionfips104:
@@ -198,9 +231,11 @@ device: #recommended
   device.ppi:
   device.pxratio:
   device.js:
+  device.geofetch:
   device.flashver:
   device.language:
   device.carrier:
+  device.mccmnc:
   device.connectiontype:
   device.ifa:
   device.didsha1:
@@ -221,6 +256,9 @@ user:  #recommended
     user.geo.lat:
     user.geo.lon:
     user.geo.type:
+    user.geo.accuracy:
+    user.geo.lastfix:
+    user.geo.ipservice:
     user.geo.country:
     user.geo.region:
     user.geo.regionfips104:
@@ -247,6 +285,7 @@ allimps:
 cur:
 bcat:
 badv:
+bapp:
 regs:
   regs.coppa:
   regs.ext:

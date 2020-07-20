@@ -14,9 +14,13 @@ seatbid:
     seatbid.bid.crid:
     seatbid.bid.cat:
     seatbid.bid.attr:
+    seatbid.bid.api:
+    seatbid.bid.protocol:
+    seatbid.bid.qagmediarating:
     seatbid.bid.dealid:
     seatbid.bid.w:
     seatbid.bid.h:
+    seatbid.bid.exp:
     seatbid.bid.ext:
   seatbid.seat:
   seatbid.group:
