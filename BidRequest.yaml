@@ -12,6 +12,7 @@ imp: #required
     imp.banner.expdir:
     imp.banner.api:
     imp.banner.id:
+    imp.banner.ext:
   imp.video: #required (if video)
     imp.video.mimes: #required
     imp.video.minduration: #required
@@ -32,6 +33,8 @@ imp: #required
     imp.video.pos:
     imp.video.companionad:
     imp.video.api:
+    imp.video.companiontype:
+    imp.video.ext:
   imp.displaymanager:
   imp.displaymanagerver:
   imp.tagid:
@@ -56,6 +59,7 @@ site: #recommended (if site)
     site.publisher.name:
     site.publisher.cat:
     site.publisher.domain:
+    site.publisher.ext:
   site.content:
     site.content.id:
     site.content.episode:
@@ -67,17 +71,24 @@ site: #recommended (if site)
       site.content.producer.name:
       site.content.producer.cat:
       site.content.producer.domain:
+      site.content.producer.ext:
     site.content.url:
     site.content.cat:
     site.content.videoquality:
     site.content.context:
     site.content.contentrating:
     site.content.userrating:
+    site.content.qagmediarating:
     site.content.keywords:
     site.content.livestream:
     site.content.sourcerelationship:
     site.content.len:
+    site.content.language:
+    site.content.embeddable:
+    site.content.data:
+    site.content.ext:
   site.keywords:
+  site.ext:
 app: #recommended (if app)
   app.id: #recommended
   app.name:
@@ -107,17 +118,23 @@ app: #recommended (if app)
       app.content.producer.name:
       app.content.producer.cat:
       app.content.producer.domain:
+      app.content.producer.ext:
     app.content.url:
     app.content.cat:
     app.content.videoquality:
     app.content.context:
     app.content.contentrating:
     app.content.userrating:
+    app.content.qagmediarating:
     app.content.keywords:
     app.content.livestream:
     app.content.sourcerelationship:
     app.content.len:
+    app.content.language:
+    app.content.embeddable:
+    app.content.ext:
   app.keywords:
+  app.ext:
 device: #recommended
   device.ua: #recommended
   device.geo: #recommended
@@ -130,6 +147,7 @@ device: #recommended
     device.geo.metro:
     device.geo.city:
     device.geo.zip:
+    device.geo.ext:
   device.dnt: #recommended
   device.ip: #recommended
   device.ipv6:
@@ -147,6 +165,7 @@ device: #recommended
   device.didmd5:
   device.dpidsha1:
   device.dpidmd5:
+  device.ext:
 user:  #recommended
   user.id: #recommended
   user.buyeruid: #recommended
@@ -164,6 +183,7 @@ user:  #recommended
     user.geo.metro:
     user.geo.city:
     user.geo.zip:
+    user.geo.ext:
   user.data:
   - user.data.id:
     user.data.name:
@@ -171,6 +191,9 @@ user:  #recommended
     - user.data.segment.id:
       user.data.segment.name:
       user.data.segment.value:
+      user.data.segment.ext:
+    user.data.ext:
+  user.ext:
 at:
 tmax:
 wseat:

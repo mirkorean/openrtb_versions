@@ -15,7 +15,9 @@ seatbid:
     seatbid.bid.ext:
   seatbid.seat:
   seatbid.group:
+  seatbid.ext:
 bidid:
 cur:
 customdata:
+nbr:
 ext:
