@@ -1,0 +1,21 @@
+id: #required
+seatbid:
+- seatbid.bid: #required
+  - seatbid.bid.id: #required
+    seatbid.bid.impid: #required
+    seatbid.bid.price: #required
+    seatbid.bid.nurl:
+    seatbid.bid.adm:
+    seatbid.bid.adid:
+    seatbid.bid.adomain:
+    seatbid.bid.iurl:
+    seatbid.bid.cid:
+    seatbid.bid.crid:
+    seatbid.bid.attr:
+    seatbid.bid.ext:
+  seatbid.seat:
+  seatbid.group:
+bidid:
+cur:
+customdata:
+ext:

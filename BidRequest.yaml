@@ -1,0 +1,181 @@
+id: #required
+imp: #required
+- imp.id: #required
+  imp.banner: #required (if banner)
+    imp.banner.w: #recommended
+    imp.banner.h: #recommended
+    imp.banner.btype:
+    imp.banner.battr:
+    imp.banner.pos:
+    imp.banner.mimes:
+    imp.banner.topframe:
+    imp.banner.expdir:
+    imp.banner.api:
+    imp.banner.id:
+  imp.video: #required (if video)
+    imp.video.mimes: #required
+    imp.video.minduration: #required
+    imp.video.maxduration: #required
+    imp.video.protocol: #required
+    imp.video.w: #recommended
+    imp.video.h: #recommended
+    imp.video.startdelay: #recommended
+    imp.video.linearity: #required
+    imp.video.sequence:
+    imp.video.battr:
+    imp.video.maxextended:
+    imp.video.minbitrate:
+    imp.video.maxbitrate:
+    imp.video.boxingallowed:
+    imp.video.playbackmethod:
+    imp.video.delivery:
+    imp.video.pos:
+    imp.video.companionad:
+    imp.video.api:
+  imp.displaymanager:
+  imp.displaymanagerver:
+  imp.tagid:
+  imp.instl:
+  imp.bidfloor:
+  imp.bidfloorcur:
+  imp.iframebuster:
+  imp.ext:
+site: #recommended (if site)
+  site.id: #recommmended
+  site.name:
+  site.domain:
+  site.cat:
+  site.sectioncat:
+  site.pagecat:
+  site.page:
+  site.ref:
+  site.search:
+  site.privacypolicy:
+  site.publisher:
+    site.publisher.id:
+    site.publisher.name:
+    site.publisher.cat:
+    site.publisher.domain:
+  site.content:
+    site.content.id:
+    site.content.episode:
+    site.content.title:
+    site.content.series:
+    site.content.season:
+    site.content.producer:
+      site.content.producer.id:
+      site.content.producer.name:
+      site.content.producer.cat:
+      site.content.producer.domain:
+    site.content.url:
+    site.content.cat:
+    site.content.videoquality:
+    site.content.context:
+    site.content.contentrating:
+    site.content.userrating:
+    site.content.keywords:
+    site.content.livestream:
+    site.content.sourcerelationship:
+    site.content.len:
+  site.keywords:
+app: #recommended (if app)
+  app.id: #recommended
+  app.name:
+  app.bundle:
+  app.domain:
+  app.storeurl:
+  app.cat:
+  app.sectioncat:
+  app.pagecat:
+  app.ver:
+  app.privacypolicy:
+  app.paid:
+  app.publisher:
+    app.publisher.id:
+    app.publisher.name:
+    app.publisher.cat:
+    app.publisher.domain:
+    app.publisher.ext:
+  app.content:
+    app.content.id:
+    app.content.episode:
+    app.content.title:
+    app.content.series:
+    app.content.season:
+    app.content.producer:
+      app.content.producer.id:
+      app.content.producer.name:
+      app.content.producer.cat:
+      app.content.producer.domain:
+    app.content.url:
+    app.content.cat:
+    app.content.videoquality:
+    app.content.context:
+    app.content.contentrating:
+    app.content.userrating:
+    app.content.keywords:
+    app.content.livestream:
+    app.content.sourcerelationship:
+    app.content.len:
+  app.keywords:
+device: #recommended
+  device.ua: #recommended
+  device.geo: #recommended
+    device.geo.lat:
+    device.geo.lon:
+    device.geo.type:
+    device.geo.country:
+    device.geo.region:
+    device.geo.regionfips104:
+    device.geo.metro:
+    device.geo.city:
+    device.geo.zip:
+  device.dnt: #recommended
+  device.ip: #recommended
+  device.ipv6:
+  device.devicetype:
+  device.make:
+  device.model:
+  device.os:
+  device.osv:
+  device.js:
+  device.flashver:
+  device.language:
+  device.carrier:
+  device.connectiontype:
+  device.didsha1:
+  device.didmd5:
+  device.dpidsha1:
+  device.dpidmd5:
+user:  #recommended
+  user.id: #recommended
+  user.buyeruid: #recommended
+  user.yob:
+  user.gender:
+  user.keywords:
+  user.customdata:
+  user.geo:
+    user.geo.lat:
+    user.geo.lon:
+    user.geo.type:
+    user.geo.country:
+    user.geo.region:
+    user.geo.regionfips104:
+    user.geo.metro:
+    user.geo.city:
+    user.geo.zip:
+  user.data:
+  - user.data.id:
+    user.data.name:
+    user.data.segment:
+    - user.data.segment.id:
+      user.data.segment.name:
+      user.data.segment.value:
+at:
+tmax:
+wseat:
+allimps:
+cur:
+bcat:
+badv:
+ext:
