@@ -5,6 +5,8 @@ seatbid:
     seatbid.bid.impid: #required
     seatbid.bid.price: #required
     seatbid.bid.nurl:
+    seatbid.bid.burl:
+    seatbid.bid.lurl:
     seatbid.bid.adm:
     seatbid.bid.adid:
     seatbid.bid.adomain:
@@ -12,14 +14,18 @@ seatbid:
     seatbid.bid.iurl:
     seatbid.bid.cid:
     seatbid.bid.crid:
+    seatbid.bid.tactic:
     seatbid.bid.cat:
     seatbid.bid.attr:
     seatbid.bid.api:
     seatbid.bid.protocol:
     seatbid.bid.qagmediarating:
+    seatbid.bid.language:
     seatbid.bid.dealid:
     seatbid.bid.w:
     seatbid.bid.h:
+    seatbid.bid.wratio:
+    seatbid.bid.hratio:
     seatbid.bid.exp:
     seatbid.bid.ext:
   seatbid.seat:

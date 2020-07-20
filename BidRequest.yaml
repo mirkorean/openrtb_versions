@@ -1,13 +1,21 @@
 id: #required
 imp: #required
 - imp.id: #required
+  imp.metric:
+  - imp.metric.type: #required
+    imp.metric.value: #required
+    imp.metric.vendor: #recommended
+    imp.metric.ext:
   imp.banner: #required (if banner)
-    imp.banner.format:
+    imp.banner.format: #recommended
     - imp.banner.format.w:
       imp.banner.format.h:
+      imp.banner.format.wratio:
+      imp.banner.format.hratio:
+      imp.banner.format.wmin:
       imp.banner.format.ext:
-    imp.banner.w: #recommended
-    imp.banner.h: #recommended
+    imp.banner.w:
+    imp.banner.h:
     imp.banner.wmax: #deprecated
     imp.banner.hmax: #deprecated
     imp.banner.wmin: #deprecated
@@ -20,6 +28,7 @@ imp: #required
     imp.banner.expdir:
     imp.banner.api:
     imp.banner.id:
+    imp.banner.vcm:
     imp.banner.ext:
   imp.video: #required (if video)
     imp.video.mimes: #required
@@ -30,6 +39,7 @@ imp: #required
     imp.video.w: #recommended
     imp.video.h: #recommended
     imp.video.startdelay: #recommended
+    imp.video.placement:
     imp.video.linearity:
     imp.video.skip:
     imp.video.skipmin:
@@ -41,6 +51,7 @@ imp: #required
     imp.video.maxbitrate:
     imp.video.boxingallowed:
     imp.video.playbackmethod:
+    imp.video.playbackend:
     imp.video.delivery:
     imp.video.pos:
     imp.video.companionad:
@@ -281,11 +292,18 @@ test:
 at:
 tmax:
 wseat:
+bseat:
 allimps:
 cur:
+wlang:
 bcat:
 badv:
 bapp:
+source:
+  source.fd:
+  source.tid:
+  source.pchain:
+  source.ext:
 regs:
   regs.coppa:
   regs.ext:
