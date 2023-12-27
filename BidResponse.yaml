@@ -17,7 +17,8 @@ seatbid:
     seatbid.bid.tactic:
     seatbid.bid.cat:
     seatbid.bid.attr:
-    seatbid.bid.api:
+    seatbid.bid.api: #deprecated
+    seatbid.bid.apis:
     seatbid.bid.protocol:
     seatbid.bid.qagmediarating:
     seatbid.bid.language:
@@ -27,6 +28,9 @@ seatbid:
     seatbid.bid.wratio:
     seatbid.bid.hratio:
     seatbid.bid.exp:
+    seatbid.bid.dur:
+    seatbid.bid.mtype:
+    seatbid.bid.slotinpod:
     seatbid.bid.ext:
   seatbid.seat:
   seatbid.group:
