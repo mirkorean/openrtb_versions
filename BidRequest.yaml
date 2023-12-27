@@ -16,10 +16,6 @@ imp: #required
       imp.banner.format.ext:
     imp.banner.w:
     imp.banner.h:
-    imp.banner.wmax: #deprecated
-    imp.banner.hmax: #deprecated
-    imp.banner.wmin: #deprecated
-    imp.banner.hmin: #deprecated
     imp.banner.btype:
     imp.banner.battr:
     imp.banner.pos:
@@ -35,16 +31,23 @@ imp: #required
     imp.video.minduration: #recommmended
     imp.video.maxduration: #recommmended
     imp.video.protocols: #recommended
-    imp.video.protocol: #deprecated
     imp.video.w: #recommended
     imp.video.h: #recommended
     imp.video.startdelay: #recommended
-    imp.video.placement:
+    imp.video.maxseq: #recommended
+    imp.video.poddur: #recommended
+    imp.video.podid:
+    imp.video.podseq:
+    imp.video.rqddurs:
+    imp.video.placement: #deprecated
+    imp.video.plcmt:
     imp.video.linearity:
     imp.video.skip:
     imp.video.skipmin:
     imp.video.skipafter:
-    imp.video.sequence:
+    imp.video.sequence: #deprecated
+    imp.video.slotinpod:
+    imp.video.mincpmpersec:
     imp.video.battr:
     imp.video.maxextended:
     imp.video.minbitrate:
@@ -57,14 +60,25 @@ imp: #required
     imp.video.companionad:
     imp.video.api:
     imp.video.companiontype:
+    imp.video.durfloors:
+      imp.video.durfloors.mindur:
+      imp.video.durfloors.maxdur:
+      imp.video.durfloors.bidfloor:
+      imp.video.durfloors.ext:
     imp.video.ext:
   imp.audio: #required (if audio)
     imp.audio.mimes: #required
     imp.audio.minduration: #recommended
     imp.audio.maxduration: #recommended
+    imp.audio.poddur: #recommended
     imp.audio.protocols: #recommended
     imp.audio.startdelay: #recommended
-    imp.audio.sequence:
+    imp.audio.rqddurs:
+    imp.audio.podid:
+    imp.audio.podseq:
+    imp.audio.sequence: #deprecated
+    imp.audio.slotinpod:
+    imp.audio.mincpmpersec:
     imp.audio.battr:
     imp.audio.maxextended:
     imp.audio.minbitrate:
@@ -77,6 +91,11 @@ imp: #required
     imp.audio.feed:
     imp.audio.stitched:
     imp.audio.nvol:
+    imp.audio.durfloors:
+      imp.audio.durfloors.mindur:
+      imp.audio.durfloors.maxdur:
+      imp.audio.durfloors.bidfloor:
+      imp.audio.durfloors.ext:
     imp.audio.ext:
   imp.native: #required (if native)
     imp.native.request: #required
@@ -84,16 +103,33 @@ imp: #required
     imp.native.api:
     imp.native.battr:
     imp.ext:
+  imp.dooh: #required (if dooh)
+    imp.dooh.id: #recommended
+    imp.dooh.name:
+    imp.dooh.venuetype:
+    imp.dooh.venuetypetax:
+    imp.dooh.publisher:
+    imp.dooh.domain:
+    imp.dooh.keywords:
+    imp.dooh.content:
+    imp.dooh.ext:
   imp.pmp:
     imp.pmp.private_auction:
     imp.pmp.deals:
-      imp.pmp.deals[].id: #required
-      imp.pmp.deals[].bidfloor:
-      imp.pmp.deals[].bidfloorcur:
-      imp.pmp.deals[].at:
-      imp.pmp.deals[].wseat:
-      imp.pmp.deals[].wadomain:
-      imp.pmp.deals[].ext:
+    - imp.pmp.deals.id: #required
+      imp.pmp.deals.bidfloor:
+      imp.pmp.deals.bidfloorcur:
+      imp.pmp.deals.at:
+      imp.pmp.deals.wseat:
+      imp.pmp.deals.wadomain:
+      imp.pmp.deals.guar:
+      imp.pmp.deals.mincpmpersec:
+      imp.pmp.deals.durfloors:
+        imp.pmp.deals.durfloors.mindur:
+        imp.pmp.deals.durfloors.maxdur:
+        imp.pmp.deals.durfloors.bidfloor:
+        imp.pmp.deals.durfloors.ext:
+      imp.pmp.deals.ext:
     imp.ext:
   imp.displaymanager:
   imp.displaymanagerver:
@@ -104,12 +140,28 @@ imp: #required
   imp.clickbrowers:
   imp.secure:
   imp.iframebuster:
+  imp.rwdd:
+  imp.ssai:
   imp.exp:
+  imp.qty:
+    imp.qty.multiplier:
+    imp.qty.sourcetype:
+    imp.qty.vendor:
+    imp.qty.ext
+  imp.dt:
+  imp.refresh:
+    imp.refresh.resettings: #recommended
+      imp.refresh.resettings.reftype: #recommended
+      imp.refresh.resettings.minint: #recommended
+      imp.refresh.resettings.ext:
+    imp.refresh.count: #recommended
+    imp.refresh.ext:
   imp.ext:
 site: #recommended (if site)
   site.id: #recommmended
   site.name:
   site.domain:
+  site.cattax:
   site.cat:
   site.sectioncat:
   site.pagecat:
@@ -149,14 +201,28 @@ site: #recommended (if site)
     site.content.userrating:
     site.content.qagmediarating:
     site.content.keywords:
+    site.content.kwarray:
     site.content.livestream:
     site.content.sourcerelationship:
     site.content.len:
     site.content.language:
+    site.content.langb:
     site.content.embeddable:
     site.content.data:
+    site.content.network:
+      site.content.network.id:
+      site.content.network.name:
+      site.content.network.domain:
+      site.content.network.ext:
+    site.content.channel:
+      site.content.channel.id:
+      site.content.channel.name:
+      site.content.channel.domain:
+      site.content.channel.ext:
     site.content.ext:
   site.keywords:
+  site.kwarray:
+  site.inventorypartnerdomain:
   site.ext:
 app: #recommended (if app)
   app.id: #recommended
@@ -173,6 +239,7 @@ app: #recommended (if app)
   app.publisher:
     app.publisher.id:
     app.publisher.name:
+    app.publisher.cattax:
     app.publisher.cat:
     app.publisher.domain:
     app.publisher.ext:
@@ -195,23 +262,51 @@ app: #recommended (if app)
     app.content.url:
     app.content.cat:
     app.content.prodq:
-    app.content.videoquality:
     app.content.context:
     app.content.contentrating:
     app.content.userrating:
     app.content.qagmediarating:
     app.content.keywords:
+    app.content.kwarray:
     app.content.livestream:
     app.content.sourcerelationship:
     app.content.len:
     app.content.language:
+    app.content.langb:
     app.content.embeddable:
     app.content.data:
+    app.content.network:
+      app.content.network.id:
+      app.content.network.name:
+      app.content.network.domain:
+      app.content.network.ext:  
+    app.content.channel:
+      app.content.channel.id:
+      app.content.channel.name:
+      app.content.channel.domain:
+      app.content.channel.ext:
     app.content.ext:
   app.keywords:
+  app.kwarray:
+  app.inventorypartnerdomain:
   app.ext:
 device: #recommended
-  device.ua: #recommended
+  device.ua:
+  device.sua:
+    device.sua.browsers: #recommended
+    - device.sua.browsers.brand #required
+      device.sua.browsers.version
+      device.sua.browsers.ext
+    device.sua.platform: #recommended
+      device.sua.platform.brand #required
+      device.sua.platform.version
+      device.sua.platform.ext
+    device.sua.mobile:
+    device.sua.architecture:
+    device.sua.bitness:
+    device.sua.model:
+    device.sua.source:
+    device.sua.ext:
   device.geo: #recommended
     device.geo.lat:
     device.geo.lon:
@@ -229,7 +324,7 @@ device: #recommended
     device.geo.ext:
   device.dnt: #recommended
   device.lmt: #recommended
-  device.ip: #recommended
+  device.ip:
   device.ipv6:
   device.devicetype:
   device.make:
@@ -249,19 +344,20 @@ device: #recommended
   device.mccmnc:
   device.connectiontype:
   device.ifa:
-  device.didsha1:
-  device.didmd5:
-  device.dpidsha1:
-  device.dpidmd5:
-  device.macsha1:
-  device.machmd5:
+  device.didsha1: #deprecated
+  device.didmd5: #deprecated
+  device.dpidsha1: #deprecated
+  device.dpidmd5: #deprecated
+  device.macsha1: #deprecated
+  device.machmd5: #deprecated
   device.ext:
 user:  #recommended
   user.id: #recommended
   user.buyeruid: #recommended
-  user.yob:
-  user.gender:
+  user.yob: #deprecated
+  user.gender: #deprecated
   user.keywords:
+  user.kwarray:
   user.customdata:
   user.geo:
     user.geo.lat:
@@ -287,6 +383,14 @@ user:  #recommended
       user.data.segment.value:
       user.data.segment.ext:
     user.data.ext:
+  user.consent:
+  user.eids:
+  - user.eids.source:
+    user.eids.uids:
+    - user.eids.uids.id:
+      user.eids.uids.atype:
+      user.eids.uids.ext:
+    user.eids.ext:
   user.ext:
 test:
 at:
@@ -300,11 +404,16 @@ bcat:
 badv:
 bapp:
 source:
-  source.fd:
-  source.tid:
-  source.pchain:
+  source.fd: #recommended
+  source.tid: #recommended
+  source.pchain: #recommended
+  source.schain: #recommended
   source.ext:
 regs:
   regs.coppa:
+  regs.gdpr:
+  regs.us_privacy:
+  regs.gpp:
+  regs.gpp_sid:
   regs.ext:
 ext:
